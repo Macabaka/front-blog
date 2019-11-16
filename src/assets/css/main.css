@@ -1,0 +1,17 @@
+/* 基础样式 规约统一前缀*/
+
+/* ----------------------全局设置------------------------ */
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+u{
+	list-style: none;
+}

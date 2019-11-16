@@ -1,0 +1,76 @@
+/* 风格样式设置 */
+.hy-titel{
+	font-size:18px;
+	font-weight:700;
+	color:rgba(0,0,0,0.8)
+}
+.hy-sub-title{
+	font-size:16px;
+	font-weight: 500;
+	color:rgba(0,0,0,0.7)
+}
+.hy-meta{
+	font-size:12px;
+	
+}
+
+.hy-prima-theme{
+	background-color: #009688;
+	color: #fff;
+}
+.hy-warning-theme{
+	background-color: #009688;
+	color: #fff;
+}
+.hy-succes-theme{
+	background-color: #009688;
+	color: #fff;
+}
+.hy-disable-theme{
+	background-color: #009688;
+	color: #fff;
+}
+
+/* 按钮设置 */
+.hy-btn{
+	border: none;
+	cursor: pointer;
+	margin: 5px;
+	
+}
+.hy-btn-round{
+	border-radius: 20%;
+}
+.hy-btn-circle{
+	border-radius: 50%;
+}
+.hy-btn-normal{
+	width: 120px;
+	height: 35px;
+	
+}
+.hy-btn-large{
+	width: 140px;
+	height: 45px;
+}
+
+/* 表单元素样式 */
+.hy-input-box{
+	display: block;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+/* 阴影样式 */
+.hy-shadow{
+	box-shadow: 2px 5px 10px #aaa;
+	
+}
+
+
+/* 头像样式 */
+.hy-avatat{
+	width: 35px;
+	height: 50px;
+	border-radius: 50%;
+}
