@@ -13,9 +13,11 @@
 	margin-bottom: 6%;
 	border-bottom:1px solid rgb(232, 234, 237);
 }
-
 .hy-col-12{
 	flex:1 1 100%;
+}
+.hy-col-10{
+	flex: 1 1 83.33%;
 }
 .hy-col-8{
 	flex: 1 1 66.6%;
@@ -41,7 +43,7 @@
 }
 .hy-col-2{
 	flex:1 1 16.6%;
-	background-color: #BC8F8F
+	background-color: #009688
 }
 .hy-col-1{
 	flex:1 1 8.3%;
@@ -121,3 +123,69 @@
 	height:80%;
 	border-radius:5%;
 }
+.hy-clo-user{
+	width: 210px;
+	height: 280px;
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(238, 238, 238);
+	margin: 2%;
+	margin-bottom: 5%;
+	border-radius: 5%;
+	position: relative;
+}
+.hy-col-user-row{
+	margin-top:30px;
+	display: flex;
+	flex: 0 0 20%;
+	flex-wrap: wrap;
+}
+.hy-col-user-pic{
+	width:100%;
+	height: 190px;
+	border-radius:5%;
+	position: absolute;
+	border-radius: 1px solid  rgb(238, 238, 238);
+	/* opacity: 0.8; */
+}
+.hy-col-user-smallpic{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom:50px;
+	left:10px;
+	border: 3px solid #fff;
+}
+.hy-col-user-nickname{
+		position: absolute;
+		bottom:30px;
+		left:20px;
+}
+.hy-user-container-big{
+	width: 70%;
+	height: 450px;
+	margin-left:40px;
+}
+	.hy-uses-container-small {
+		width: 100%;
+		background-color: rgb(224, 224, 224);
+		height: 100%;
+		display: flex;
+		border-radius:2%;
+	}
+
+	.hy-user-img {
+		width: 100%;
+		height: 35%;
+		margin: 20px;
+	}
+
+	.hy-user-basic-content {
+		width: 70%;
+		background-color: rgb(238, 238, 238);
+		height: 30px;
+		margin-top: 28px;
+		margin-left: 50px;
+		border-radius: 4%;
+	}
+	

@@ -1,19 +1,16 @@
 <template>
-	<h2>文章详情页</h2>
+	<h2>用户详情页</h2>
 </template>
 
 <script>
 	export default{
 		data(){
 			return{
-				
 			}
 		},
 		created(){
-			
 		},
 		computed:{
-			
 		}
 	}
 </script>

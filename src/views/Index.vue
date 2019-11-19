@@ -1,61 +1,24 @@
-
 <template>
-	<div class="hy-container">
-		<!-- <div  class="hy-row">
-			<div class="hy-col-8">
-				<div class="hy-col-6" v-for="(article,index) in articles"  :key="index">
-					<p class="hy-title">123{{article.title}}</p>
-				</div>
-			</div>	
-		</div> -->
-		<div class="hy-col-1">
+	<router-link to="/Sign">
+		<h1 style="text-align: center;color: black;">点击登录</h1>
+		<div class="chest">
+			<div class="heart left side top"></div>
+			<div class="heart center"></div>
+			<div class="heart right side"></div>
 		</div>
-		<div class="hy-col-6 hy-margin-top30">
-			<div class="hy-row" v-for="(article,index) in articles" :key="index">
-				<div class="hy-col-8 hy-pos-relative">
-					<h4 class="hy-margin-10" style="height: 15%;">{{article.title}}</h4>
-					<span class="hy-margin-10" style="height: 80%;">{{article.Scontent}}</span>
-					<div class="hy-pos-absolute hy-small-bottom " style="height: 5%;">
-						<span class="hy-margin-10">{{article.Ncomment}}</span>
-						<span class="hy-margin-10">{{article.Nread}}</span>
-					</div>
-				</div>
-				<div class="hy-col-4" >
-					<img :src="article.avatar" alt="" class="hy-article-pic">
-				</div>
-			</div>
-			
-		</div>
-		<div class="hy-col-4 hy-margin-top30">
-			<div class="hy-small-row" style="text-align: center;">
-				<h2 >123</h2>
-				<span >作品数目:</span>
-				<span>关注人数:</span>
-			</div>
-		</div>
-		
-	</div>
-	
-	
+	</router-link>
+
 </template>
 
 <script>
 	export default{
 		data(){
 			return{
-				articles:[],
-				project:[]
+				
 			}
 		},
 		created(){
-			this.axios.get('http://localhost:8080/article').then(articleres =>{
-				console.log(articleres.data.data)
-				this.articles = articleres.data.data;
-			})
-			this.axios.get('http://localhost:8080/article').then(projectres=>{
-				console.log(projectres.data.data)
-				this.project = projectres.data.data;
-			})
+			
 		},
 		computed:{
 			
@@ -64,6 +27,65 @@
 </script>
 
 <style>
-@import url("../assets/css/basic.css");
-@import url("../assets/css/style.css");
+	.chest {
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.heart {
+		position: absolute;
+		z-index: 2;
+		background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+		animation: beat 0.7s ease 0s infinite normal;
+	}
+		
+	.heart.center {
+		background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+	}
+		
+	.heart.top {
+		z-index: 3;
+	}
+		
+	.side {
+		top: 100px;
+		width: 220px;
+		height: 220px;
+		border-radius: 110px;
+	}
+		
+	.center {
+		width: 210px;
+		height: 210px;
+		bottom: 100px;
+		left: 145px;
+		transform: rotateZ(225deg);
+		/*transform: rotate(45deg);*/
+	}
+		
+	.left {
+		left: 62px;
+	}
+		
+	.right {
+		right: 62px;
+	}
+		
+		
+	@keyframes beat {
+		0% {
+			transform: scale(1) rotate(225deg);
+			box-shadow:0 0 40px #d5093c;
+		}
+		
+		50% {
+			transform: scale(1.1) rotate(225deg);
+			box-shadow:0 0 70px #d5093c;
+		}
+		100% {
+			transform: scale(1) rotate(225deg);
+		box-shadow:0 0 40px #d5093c;
+		}
+	}
 </style>
